@@ -25,6 +25,7 @@ module HighVoltage::StaticPage
   end
 
   def show
+    expires_in 3.days, public: true
     render template: current_page
   end
 
